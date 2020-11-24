@@ -1,0 +1,22 @@
+{
+    "author":"Adam Euans <adam@euans.us>",
+    "bugs":"https://github.com/euans/commandbox-navigate/issues",
+    "documentation":"https://github.com/euans/commandbox-navigate",
+    "homepage":"https://github.com/euans/commandbox-navigate",
+    "license":[
+        {
+            "type":"MIT",
+            "URL":"http://opensource.org/licenses/MIT"
+        }
+    ],
+    "location":"euans/commandbox-navigate",
+    "name":"navigate",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/euans/commandbox-navigate"
+    },
+    "shortDescription":"A CommandBox module that allows you to navigate your working directory history.",
+    "slug":"commandbox-navigate",
+    "type":"commandbox-modules",
+    "version":"0.1.0"
+}
