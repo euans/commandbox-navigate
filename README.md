@@ -32,6 +32,7 @@ CommandBox> back
 ```
 CommandBox> navigate forward
 CommandBox> navigate forward 2
+CommandBox> navigate >
 CommandBox> fwd
 ```
 
