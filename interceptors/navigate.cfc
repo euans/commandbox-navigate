@@ -6,7 +6,7 @@ component {
 		var configSettings = ConfigService.getconfigSettings();
 		
 		cfparam (name='configSettings.modules["commandbox-navigate"].history', default=[]);
-		cfparam (name='configSettings.modules["commandbox-navigate"].historyMax', default=3);
+		cfparam (name='configSettings.modules["commandbox-navigate"].historyMax', default=25);
 		var history    = configSettings.modules["commandbox-navigate"].history;
 		var historyMax = configSettings.modules["commandbox-navigate"].historyMax;
 
