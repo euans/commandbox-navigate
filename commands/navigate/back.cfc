@@ -1,7 +1,7 @@
 /**
 * Navigate backwards through directory history
 */
-component aliases='back,navigate <' {
+component aliases='back,<-' {
 
 	/**
 	* @step Number of steps to traverse

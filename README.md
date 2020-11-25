@@ -23,22 +23,22 @@ CommandBox> navigate history
 CommandBox> history
 ```
 
-## Navigate Back (<) - *set the working directory to one previously viewed*
+## Navigate Back (<-) - *set the working directory to one previously viewed*
 **step** *(optional)* - Number of steps to go back in history.
 ```bash
 CommandBox> navigate back
 CommandBox> navigate back 2
-CommandBox> navigate <
+CommandBox> <-
 CommandBox> back
 ```
 
-## Navigate Forward (>) - *set the working directory to one previously viewed*
+## Navigate Forward (->) - *set the working directory to one previously viewed*
 **step** *(optional)* - Number of steps to go forward in history.
 
 ```bash
 CommandBox> navigate forward
 CommandBox> navigate forward 2
-CommandBox> navigate >
+CommandBox> ->
 CommandBox> fwd
 ```
 
