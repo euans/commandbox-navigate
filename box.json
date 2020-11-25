@@ -18,5 +18,5 @@
     "shortDescription":"A CommandBox module that allows you to navigate your working directory history.",
     "slug":"commandbox-navigate",
     "type":"commandbox-modules",
-    "version":"0.1.2"
+    "version":"0.2.0"
 }
