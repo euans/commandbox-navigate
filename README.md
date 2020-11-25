@@ -19,7 +19,7 @@ CommandBox> set modules.commandbox-navigate.historyMax = 25
 ## Navigate History - *list existing history*
 
 ```bash
-CommandBox> navigatge history
+CommandBox> navigate history
 CommandBox> history
 ```
 
