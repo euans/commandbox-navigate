@@ -7,8 +7,10 @@ component {
 		
 		cfparam (name='configSettings.modules["commandbox-navigate"].history', default=[]);
 		cfparam (name='configSettings.modules["commandbox-navigate"].historyMax', default=25);
-		var history    = configSettings.modules["commandbox-navigate"].history;
-		var historyMax = configSettings.modules["commandbox-navigate"].historyMax;
+		cfparam (name='configSettings.modules["commandbox-navigate"].historyIndex', default=1);
+		var history      = configSettings.modules["commandbox-navigate"].history;
+		var historyMax   = configSettings.modules["commandbox-navigate"].historyMax;
+		var historyIndex = configSettings.modules["commandbox-navigate"].historyIndex;
 
 		if ( 
 			listFindNoCase('cd', interceptData.commandInfo.commandString) &&
@@ -16,7 +18,7 @@ component {
 			val(historyMax) &&
 			(history[1]?:'') != interceptData.result
 		) {
-			configSettings.modules["commandbox-navigate"].history = history.prepend(interceptData.result).mid(1, historyMax);
+			configSettings.modules["commandbox-navigate"].history = history.mid(historyIndex, historyMax).prepend(interceptData.result);
 			configSettings.modules["commandbox-navigate"].historyIndex = 1;
 			ConfigService.setConfigSettings( configSettings );
 			//consoleLogger.debug(serialize(interceptData.parameterInfo));
