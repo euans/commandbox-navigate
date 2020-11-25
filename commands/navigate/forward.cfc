@@ -6,7 +6,7 @@ component aliases='fwd,navigate >' {
 	/**
 	* @step Number of steps to traverse
 	*/
-	function run ( number index=1 ) {
+	function run ( number step=1 ) {
 		var configSettings = ConfigService.getconfigSettings();
 
 		cfparam (name='configSettings.modules["commandbox-navigate"].history', default=[]);
